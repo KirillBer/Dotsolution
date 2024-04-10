@@ -1,2 +1,0 @@
-# Dotsolution
-University project
