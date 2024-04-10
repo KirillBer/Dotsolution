@@ -2,6 +2,21 @@
 .footer{
     .footer__top{
         margin-bottom: 74px;
+        
+        img{
+            @media screen and (max-width: 992px) { 
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        @media screen and (max-width: 992px) { 
+            .row{
+                row-gap: 24px;
+                align-items: center;
+            }
+        }
+        
 
         .footer__links{
             text-align: center;
@@ -14,6 +29,9 @@
 
         .footer__info{
             text-align: right;
+            @media screen and (max-width: 992px) { 
+                text-align: center;
+            }
         }
     }
     

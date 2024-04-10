@@ -4,18 +4,42 @@
 
     p{
         margin-bottom: 262px;
+        @media screen and (max-width: 992px) { 
+            margin-bottom: 285px;
+        }
+        @media screen and (max-width: 768px) { 
+            margin-bottom: 20px;
+        }
     }
 
     h1 span{
         color: #FFA239;
     }
-    .promo-bg{
+
+    .promo-bg {
         height: 628px;
-        background: url("../../project/public/img/bg.svg") center no-repeat;
+        background: url("../public/img/bg.svg") center no-repeat;
+        background-size: contain;
+        @media screen and (max-width: 992px) { 
+            height: 670px;
+        }
+        @media screen and (max-width: 768px) { 
+            background: none;
+            height: auto;
+        }
+
+        .promo-bg-md {
+            display: none;
+            width: 100%;
+            @media screen and (max-width: 768px) { 
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
     }
     .promo__list li{
         display: flex;
-        align-items: center;
+        align-items: baseline;
         gap: 12px;
         margin-bottom: 8px;
     

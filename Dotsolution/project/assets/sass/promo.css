@@ -3,28 +3,55 @@
 .promo {
   margin-bottom: 65px;
 }
-
 .promo p {
   margin-bottom: 262px;
 }
-
+@media screen and (max-width: 992px) {
+  .promo p {
+    margin-bottom: 285px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .promo p {
+    margin-bottom: 20px;
+  }
+}
 .promo h1 span {
   color: #FFA239;
 }
-
-.promo-bg {
+.promo .promo-bg {
   height: 628px;
-  background: url("../../project/public/img/bg.svg") center no-repeat;
+  background: url("../public/img/bg.svg") center no-repeat;
+  background-size: contain;
 }
-
-.promo__list li {
+@media screen and (max-width: 992px) {
+  .promo .promo-bg {
+    height: 670px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .promo .promo-bg {
+    background: none;
+    height: auto;
+  }
+}
+.promo .promo-bg .promo-bg-md {
+  display: none;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .promo .promo-bg .promo-bg-md {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.promo .promo__list li {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 12px;
   margin-bottom: 8px;
 }
-
-.promo-list li:last-child {
+.promo .promo__list li:last-child {
   margin-bottom: 0;
 }
 

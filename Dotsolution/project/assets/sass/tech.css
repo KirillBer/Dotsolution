@@ -3,12 +3,20 @@
 .tech {
   margin-bottom: 94px;
 }
-
-.tech .row {
+.tech .tech .row {
   row-gap: 24px;
 }
-
-.tech__card {
+@media screen and (max-width: 576px) {
+  .tech .tech .row {
+    row-gap: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .tech .tech .row .col-6 {
+    padding: 0 5px;
+  }
+}
+.tech .tech__card {
   display: flex;
   gap: 24px;
   flex-direction: column;
@@ -21,16 +29,19 @@
   background: #FFF;
   box-shadow: var(--box-shadow);
 }
-
-.tech__card-img-wrap {
+@media screen and (max-width: 992px) {
+  .tech .tech__card {
+    padding-top: 44px;
+  }
+}
+.tech .tech__card .tech__card-img-wrap {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.tech__card-name {
+.tech .tech__card .tech__card-name {
   font-size: 18px;
   color: #8A99A8;
 }
